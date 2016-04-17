@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<title>Rafal Jankowski - Java developer</title>
+
+
+<meta name="description" content="Developer Java" />
+<meta name="keywords" content="developer, java, spring" />
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
+<link rel="stylesheet" href="css/fontello.css" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<link href='https://fonts.googleapis.com/css?family=Lato:400,900italic' rel='stylesheet' type='text/css'>
+
+
+</head>
+
+<body onload="slider('lineFollower')">
+	<div class="container">
+		<div class="row " id="image">
+			<img src="img/lineFollower/1.png" class="img-responsive col-lg-8 col-lg-offset-2 col-lg-offset-2 text-center" />
+		</div>
+		<div class="row text-center">
+			<div class=" col-lg-1 col-lg-offset-4" onclick="setSlide(1,'lineFollower')" style="cursor: pointer">
+				<i class="icon-dot-circled"></i>
+			</div>
+			<div class="col-lg-1" onclick="setSlide(2,'lineFollower')" style="cursor: pointer">
+				<i class="icon-dot-circled"></i>
+			</div>
+			<div class="col-lg-1" onclick="setSlide(3,'lineFollower')" style="cursor: pointer">
+				<i class="icon-dot-circled"></i>
+			</div>
+			<div class="col-lg-1" onclick="setSlide(4,'lineFollower')" style="cursor: pointer">
+				<i class="icon-dot-circled"></i>
+			</div>
+		</div>
+		<div class="row text-left">
+			<h1>1. Opis projektu</h1>
+			Tematem projektu była budowa autonomicznego robota typu Line-follower. <br />
+			<h1>2. Użyte cześci</h1>
+			- Arduino Nano<br /> - Silniki DC Dagu 48:1<br /> - Mostek H - L293D<br /> - Sensor odbiciowy Pololu QTR-8A<br />
+			<h1>3. Algorytm przejazu</h1>
+			Podczas programowania robota zastosowałem regulator PD (ang. proportional-derivative controller), składający się z członu proporcjonalnego (kompensuje uchyb biezacy) oraz czlonu różniczkującego
+			(kompensuje przewidywane uchyby). Niestety nie było to wystarczające przy pokonywaniu ostrych zaketów, dlatego musiałem dodac ręczną obługe takich dużych kątów.
+			<h1>4. Kod programu</h1>
+			<button class="btn btn-success" onclick="window.location.href='https://github.com/janiu/Line-follower/blob/master/jazdaPoLini.-.PD.txt'">GitHub</button>
+			<h1>5. Film prezentujący jazde</h1>
+			<div class="videoContainer">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/WL6Zig8OaDE" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="row ">
+			<div class="col-lg-6 col-lg-offset-3 text-center">2016 &copy; Rafal Jankowski - Java developer.</div>
+		</div>
+
+
+	</div>
+</body>
+</html>
