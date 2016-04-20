@@ -75,8 +75,7 @@ function getCareer() {
 }
 
 function getAboutMe() {
-	mainText = "<img src=\"img/profil.png\" align=\"left\" hspace=\"8\" /> "
-			+ "I'm junior Java developer and I have more than one year of expierence in programming in that language. It makes me satisfied and I am doing everything in my power to explore Java more and more."
+	mainText = "I'm junior Java developer and I have more than one year of expierence in programming in that language. It makes me satisfied and I am doing everything in my power to explore Java more and more."
 	document.getElementById("main").innerHTML = mainText;
 }
 
